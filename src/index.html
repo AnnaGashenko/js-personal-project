@@ -35,12 +35,13 @@
         </div>
       </div>
       <div class="center">
-        <h2 class="center__title">Cold water</h2>
-        <p class="center__desc">Payment of cold water supply</p>
+        <h2 id="payment_title" class="center__title">Cold water</h2>
+        <p id="payment_desc" class="center__desc">Payment of cold water supply</p>
         <p class="center__select-meters">
           <label for="meters">
             <span>Select Meter</span>
             <select id="meters">
+              <option value=""></option>
               <option value="DS949321">DS 949321</option>
               <option value="QA522010">QA 522010</option>
               <option value="LK309123">LK 309123</option>
@@ -79,24 +80,24 @@
           <div class="form__summary">
             <p class="form__summary-title">For payment</p>
             <ul class="form__summary-list">
-              <li class="list__item">
-                <p><span class="list__item-label">DS 949321</span>
-                  <span class="price">$ <b>621</b></span>
-                </p>
-              </li>
-              <li class="list__item">
-                <p><span class="list__item-label">QA 522010</span>
-                  <span class="price">$ <b>902</b></span>
-                </p>
-              </li>
-              <li class="list__item">
-                <p><span class="list__item-label">LK 309123</span>
-                  <span class="price">$ <b>173</b></span>
-                </p>
-              </li>
+              <!--<li class="list__item">-->
+                <!--<p><span class="list__item-label">DS 949321</span>-->
+                  <!--<span class="price">$ <b>621</b></span>-->
+                <!--</p>-->
+              <!--</li>-->
+              <!--<li class="list__item">-->
+                <!--<p><span class="list__item-label">QA 522010</span>-->
+                  <!--<span class="price">$ <b>902</b></span>-->
+                <!--</p>-->
+              <!--</li>-->
+              <!--<li class="list__item">-->
+                <!--<p><span class="list__item-label">LK 309123</span>-->
+                  <!--<span class="price">$ <b>173</b></span>-->
+                <!--</p>-->
+              <!--</li>-->
               <li class="list__item list__total">
                 <p><span class="list__item-label">Total</span>
-                  <span class="price">$ <b>1 696</b></span>
+                  <span class="price">$ <b id="total-sum">0.00</b></span>
                 </p>
               </li>
             </ul>
@@ -115,31 +116,31 @@
           <div class="right__payments-fields">
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" checked/>
+                <input type="checkbox" data-name="taxes" />
                 <span>Taxes</span>
               </label>
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" />
+                <input type="checkbox" data-name="water" />
                 <span>Cold water</span>
               </label>
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" />
+                <input type="checkbox" data-name="internet" />
                 <span>Internet</span>
               </label>
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" checked/>
+                <input type="checkbox" data-name="security" />
                 <span>Security</span>
               </label>
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" />
+                <input type="checkbox" data-name="exchange" />
                 <span>Currency purchase</span>
               </label>
             </p>
@@ -151,8 +152,8 @@
         <div class="right__transactions">
           <p class="transactions__title">Transactions</p>
           <ul class="transactions__list">
-            <li class="list__item">Taxes: Successful payment</li>
-            <li class="list__item list__item-error">Security: Transaction error</li>
+            <!--<li class="list__item">Taxes: Successful payment</li>-->
+            <!--<li class="list__item list__item-error">Security: Transaction error</li>-->
           </ul>
         </div>
       </div>
